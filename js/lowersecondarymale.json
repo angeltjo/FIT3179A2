@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "World - Male",
+  "data": {
+    "values": [
+      {"category": "Completed", "value": 0.7},
+      {"category": "Didn't Complete", "value": 0.3}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 50},
+      "encoding": {
+        "theta": {"field": "value", "type": "quantitative", "stack": true},
+        "color": {"field": "category", "type": "nominal"},
+        "order": {"field": "value", "sort": "ascending"}
+      }
+    },
+    {
+      "mark": {"type": "text", "radius": 75, "fill": "black"},
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative", "format": ".0%"},
+        "theta": {"field": "value", "type": "quantitative", "stack": true}
+      }
+    }
+  ]
+}
