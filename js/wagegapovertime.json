@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/angeltjo/FIT3179A2/main/data/gender-wage-gap.csv"
+  },
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 300,
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "timeUnit": "year",
+          "scale": {"domain": {"param": "time_brush"}}
+        }
+      },
+      "layer": [
+        {
+          "encoding": {
+            "color": {"field": "Entity", "type": "nominal"},
+            "y": {"field": "Wage_Gap", "type": "quantitative"}
+          },
+          "layer": [
+            {"mark": "line"},
+            {
+              "transform": [{"filter": {"param": "hover", "empty": false}}],
+              "mark": "point"
+            }
+          ]
+        },
+        {
+          "transform": [
+            {"pivot": "Entity", "value": "Wage_Gap", "groupby": ["Year"]}
+          ],
+          "mark": "rule",
+          "encoding": {
+            "opacity": {
+              "condition": {"value": 0.3, "param": "hover", "empty": false},
+              "value": 0
+            },
+            "tooltip": [
+              {"field": "Australia", "type": "quantitative"},
+              {"field": "Finland", "type": "quantitative"},
+              {"field": "Japan", "type": "quantitative"},
+              {"field": "South Korea", "type": "quantitative"},
+              {"field": "Sweden", "type": "quantitative"},
+              {"field": "United Kingdom", "type": "quantitative"},
+              {"field": "United States", "type": "quantitative"}
+            ]
+          },
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["Year"],
+                "nearest": true,
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 600,
+      "height": 60,
+      "mark": "line",
+      "params": [
+        {
+          "name": "time_brush",
+          "select": {"type": "interval", "encodings": ["x"]}
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "timeUnit": "year",
+          "axis": {"title": "", "format": "%Y"}
+        },
+        "color": {"field": "Entity", "type": "nominal"},
+        "y": {
+          "field": "Wage_Gap",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false},
+          "title": "Wage Gap"
+        }
+      }
+    }
+  ]
+}
