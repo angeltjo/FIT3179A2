@@ -38,6 +38,6 @@ Age_Group,people,sex,sex_no,age
 75 to 79 years old,"71,231,681",Female,2,75
 80 to 84 years old,"48,840,181",Female,2,80
 85 to 89 years old,"27,614,863",Female,2,85
-90 to 94 years old,"12,172,566",Female,2,90
-95 to 99 years old,"3,377,405",Female,2,95
-100 years old +,"486,430",Female,2,100
+90 to 94 years old,12172566,Female,2,90
+95 to 99 years old,3377405,Female,2,95
+100 years old +,486430,Female,2,100
