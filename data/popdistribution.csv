@@ -1,6 +1,6 @@
 Age_Group,people,sex,sex_no,age
 0 to 4 years old,349524863,Male,1,0
-5 to 9 years old,344376197,Male,1,5
+5 to 9 years old,344376197,Male,1,05
 10 to 14 years old,333944005,Male,1,10
 15 to 19 years old,318945048,Male,1,15
 20 to 24 years old,309162637,Male,1,20
@@ -21,7 +21,7 @@ Age_Group,people,sex,sex_no,age
 95 to 99 years old,1239874,Male,1,95
 100 years old +,135005,Male,1,100
 0 to 4 years old,328762461,Female,2,0
-5 to 9 years old,323101366,Female,2,5
+5 to 9 years old,323101366,Female,2,05
 10 to 14 years old,312273127,Female,2,10
 15 to 19 years old,297685602,Female,2,15
 20 to 24 years old,289633429,Female,2,20
