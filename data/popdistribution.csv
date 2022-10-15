@@ -1,25 +1,25 @@
 Age_Group,people,sex,sex_no,age
 0 to 4 years old,349524863,Male,1,0
 5 to 9 years old,344376197,Male,1,5
-10 to 14 years old,"333,944,005",Male,1,10
-15 to 19 years old,"318,945,048",Male,1,15
-20 to 24 years old,"309,162,637",Male,1,20
-25 to 29 years old,"305,182,551",Male,1,25
-30 to 34 years old,"310,514,056",Male,1,30
-35 to 39 years old,"282,814,059",Male,1,35
-40 to 44 years old,"252,146,917",Male,1,40
-45 to 49 years old,"241,799,413",Male,1,45
-50 to 54 years old,"225,715,496",Male,1,50
-55 to 59 years old,"196,711,317",Male,1,55
-60 to 64 years old,"160,773,193",Male,1,60
-65 to 69 years old,"131,891,628",Male,1,65
-70 to 74 years old,"91,526,291",Male,1,70
-75 to 79 years old,"56,736,973",Male,1,75
-80 to 84 years old,"34,405,737",Male,1,80
-85 to 89 years old,"16,760,709",Male,1,85
-90 to 94 years old,"5,932,421",Male,1,90
-95 to 99 years old,"1,239,874",Male,1,95
-100 years old +,"135,005",Male,1,100
+10 to 14 years old,333944005,Male,1,10
+15 to 19 years old,318945048,Male,1,15
+20 to 24 years old,309162637,Male,1,20
+25 to 29 years old,305182551,Male,1,25
+30 to 34 years old,310514056,Male,1,30
+35 to 39 years old,282814059,Male,1,35
+40 to 44 years old,252146917,Male,1,40
+45 to 49 years old,241799413,Male,1,45
+50 to 54 years old,225715496,Male,1,50
+55 to 59 years old,196711317,Male,1,55
+60 to 64 years old,160773193,Male,1,60
+65 to 69 years old,131891628,Male,1,65
+70 to 74 years old,91526291,Male,1,70
+75 to 79 years old,56736973,Male,1,75
+80 to 84 years old,34405737,Male,1,80
+85 to 89 years old,16760709,Male,1,85
+90 to 94 years old,5932421,Male,1,90
+95 to 99 years old,1239874,Male,1,95
+100 years old +,135005,Male,1,100
 0 to 4 years old,"328,762,461",Female,2,0
 5 to 9 years old,"323,101,366",Female,2,5
 10 to 14 years old,"312,273,127",Female,2,10
