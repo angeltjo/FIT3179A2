@@ -20,10 +20,10 @@ Age_Group,people,sex,sex_no,age
 90 to 94 years old,5932421,Male,1,90
 95 to 99 years old,1239874,Male,1,95
 100 years old +,135005,Male,1,100
-0 to 4 years old,"328,762,461",Female,2,0
-5 to 9 years old,"323,101,366",Female,2,5
-10 to 14 years old,"312,273,127",Female,2,10
-15 to 19 years old,"297,685,602",Female,2,15
+0 to 4 years old,328762461,Female,2,0
+5 to 9 years old,323101366,Female,2,5
+10 to 14 years old,312273127,Female,2,10
+15 to 19 years old,297685602,Female,2,15
 20 to 24 years old,"289,633,429",Female,2,20
 25 to 29 years old,"287,318,181",Female,2,25
 30 to 34 years old,"296,871,527",Female,2,30
