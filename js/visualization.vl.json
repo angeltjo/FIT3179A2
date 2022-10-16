@@ -51,7 +51,8 @@
         "color": {
           "field": "2013_Score",
           "type": "quantitative",
-          "title": "Score"
+          "title": "Score",
+          "scale": {"scheme": "purples"}
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
@@ -61,3 +62,4 @@
     }
   ]
 }
+
