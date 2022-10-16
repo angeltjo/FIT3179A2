@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/angeltjo/FIT3179A2/main/data/popdistribution.csv"
   },
+  "title": "Global Population Distribution",
   "transform": [
     {"calculate": "datum.sex_no == 2 ? 'Female' : 'Male'", "as": "gender"},
     {
