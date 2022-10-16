@@ -35,6 +35,7 @@
         <h2>Global Population</h2>
         <p>This map shows the Global Gender Equality Score for countries all over the world. The higher the score is, the more gender equal the country is.</p>
         <div id="vis1" class="vis-container"></div>
+        <div id="vis6" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -115,6 +116,7 @@
     var specVis3 = "js/primary.json";
     var specVis4 = "js/lowersecondary.json";
     var specVis5 = "js/uppersecondary.json";
+    var specVis6 = "js/populationpyramid.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
@@ -131,6 +133,10 @@
     }).catch(console.error);
     
     vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
