@@ -17,7 +17,7 @@
           "mark": {"type": "arc", "innerRadius": 50},
           "encoding": {
             "theta": {"field": "value", "type": "quantitative", "stack": true},
-            "color": {"field": "category", "type": "nominal"},
+            "color": {"field": "category", "type": "nominal", "scale": {"range": ["#907fb3", "lightgray"]}},
             "order": {"field": "value", "sort": "ascending"}
           }
         },
