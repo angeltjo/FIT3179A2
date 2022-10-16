@@ -49,7 +49,7 @@
       "mark": "line",
       "encoding": {
         "detail": {"field": "position", "type": "nominal"},
-        "color": {"value": "#db646f"}
+        "color": {"value": "gray"}
       }
     },
     {
@@ -59,7 +59,7 @@
           "field": "gender",
           "scale": {
             "domain": ["Female", "Male"],
-            "range": ["#e6959c", "#911a24"]
+            "range": ["#b28fba", "#9fd1c6"]
           },
           "title": "Year"
         },
