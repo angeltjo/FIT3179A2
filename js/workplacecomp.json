@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/angeltjo/FIT3179A2/main/data/workplacecomp.csv"
+  },
+  "width": 600,
+  "height": 300,
+  "transform": [
+    {
+      "filter": {
+        "field": "position",
+        "oneOf": [
+          "All managers",
+          "CEO/head of business in Australia",
+          "Head of business",
+          "Key management personnel",
+          "Other executives/general managers",
+          "Senior managers",
+          "Other managers",
+          "All Non-managers",
+          "Clerical and administrative",
+          "Community and personal service",
+          "Machinery operators and drivers",
+          "Sales",
+          "Professionals",
+          "Technicians and trade",
+          "Labourers"
+        ]
+      }
+    },
+    {"filter": {"field": "gender", "oneOf": ["Male", "Female"]}}
+  ],
+  "encoding": {
+    "x": {"field": "percentage", "type": "quantitative", "title": "Percentage"},
+    "y": {
+      "field": "position",
+      "type": "nominal",
+      "title": "Workforce Positions",
+      "axis": {"offset": 5, "ticks": false, "minExtent": 70, "domain": false}
+    },
+    "tooltip": [
+      {"field": "gender", "type": "nominal"},
+      {"field": "position", "type": "nominal"},
+      {"field": "percentage", "type": "quantitative", "format": ".0%"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {"field": "position", "type": "nominal"},
+        "color": {"value": "#db646f"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true},
+      "encoding": {
+        "color": {
+          "field": "gender",
+          "scale": {
+            "domain": ["Female", "Male"],
+            "range": ["#e6959c", "#911a24"]
+          },
+          "title": "Year"
+        },
+        "size": {"value": 100},
+        "opacity": {"value": 1}
+      }
+    }
+  ]
+}
