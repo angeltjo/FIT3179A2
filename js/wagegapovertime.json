@@ -17,7 +17,7 @@
       "layer": [
         {
           "encoding": {
-            "color": {"field": "Entity", "type": "nominal"},
+            "color": {"field": "Entity", "type": "nominal", "scale":{"range": ["#758cd9", "#a13670", "#262254","#56b6c4","#ffa45e","#edb7e6","#ec4176"]}},
             "y": {"field": "Wage_Gap", "type": "quantitative"}
           },
           "layer": [
