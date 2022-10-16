@@ -3,11 +3,11 @@
   "data": {
     "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/6_advanced_examples/data/earthquake_lite.csv"
   },
-  "width": 600,
-  "height": 300,
   "hconcat": [
     {
       "title": "Male",
+      "width": 600,
+      "height": 200,
       "data": {
         "values": [
           {"category": "Completed", "value": 0.82},
