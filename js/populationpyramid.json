@@ -24,13 +24,13 @@
     },
     "color": {
       "field": "gender",
-      "scale": {"range": ["#675193", "#ca8861"]},
+      "scale": {"range": ["#b28fba", "#517b93"]},
       "legend": {"orient": "top", "title": null}
     },
     "tooltip": [
       {"field": "sex", "type": "nominal", "title": "Gender"},
       {"field": "Age_Group", "type": "nominal", "title": "Age Group"},
-      {"field": "people", "type": "nominal", "title": "Population"}
+      {"field": "people", "type": "nominal", "title": "Population","format": ",.0f"}
     ]
   },
   "config": {"view": {"stroke": null}, "axis": {"grid": false}}
