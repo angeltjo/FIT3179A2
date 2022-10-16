@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 400,
   "height": 250,
-  "title": "Wage Gap vs Women in the Top 5%",
+  "title": "The Relationship Between Wage Gap and Women in the Top 5%",
   "data": {
     "url": "https://raw.githubusercontent.com/angeltjo/week10-homework/main/data/wagegapvswomenintopincome.csv"
   },
@@ -26,7 +26,7 @@
       "type": "quantitative",
       "title": "Gender Wage Gap (%)",
       "axis": {"tickCount": 5},
-      "scale": {"domain": [5, 25]}
+      "scale": {"domain": [0, 25]}
     },
     "y": {
       "field": "WomenInTop5",
@@ -40,7 +40,7 @@
     {
       "mark": "circle",
       "encoding": {
-        "color": {"field": "Entity", "type": "nominal"},
+        "color": {"field": "Entity", "type": "nominal", "scale":{"range": ["#758cd9", "#ed9213", "#961df2","#9fd1c6","#1a9140","#f5e322","#b28fba","#edb7e6"]}},
         "size": {
           "field": "Population",
           "type": "quantitative",
@@ -63,7 +63,7 @@
             "type": "quantitative",
             "title": "Share of Women in Top 5%"
           },
-          {"field": "Population", "type": "quantitative"}
+          {"field": "Population", "type": "quantitative", "format":",.0f"}
         ]
       }
     },
