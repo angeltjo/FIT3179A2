@@ -10,7 +10,7 @@
       "as": "signed_people"
     }
   ],
-  "width": 300,
+  "width": 400,
   "height": 200,
   "mark": "bar",
   "encoding": {
