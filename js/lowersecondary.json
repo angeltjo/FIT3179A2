@@ -6,6 +6,7 @@
   "hconcat": [
     {
       "title": "Male",
+      "width": 400,
       "data": {
         "values": [
           {"category": "Completed", "value": 0.7},
@@ -31,7 +32,8 @@
       ]
     },
     {
-      "title": "Female",
+      "title": "Female",   
+      "width": 400,
       "data": {
         "values": [
           {"category": "Completed", "value": 0.69},
