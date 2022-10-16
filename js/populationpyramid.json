@@ -24,7 +24,7 @@
     },
     "color": {
       "field": "gender",
-      "scale": {"range": ["#b28fba", "#517b93"]},
+      "scale": {"range": ["#b28fba", "#9fd1c6"]},
       "legend": {"orient": "top", "title": null}
     },
     "tooltip": [
