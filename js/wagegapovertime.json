@@ -3,9 +3,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/angeltjo/FIT3179A2/main/data/gender-wage-gap.csv"
   },
-  "title": "Wage Gap Over the Years",
   "vconcat": [
     {
+      "title": "Wage Gap Over the Years",
       "width": 700,
       "height": 300,
       "encoding": {
@@ -19,14 +19,14 @@
       "layer": [
         {
           "encoding": {
-            "color": {"field": "Entity", "type": "nominal", "scale":{"range": ["#758cd9", "#a13670", "#262254","#56b6c4","#ffa45e","#edb7e6","#ec4176"]}},
+            "color": {"field": "Entity", "title": "Country", "type": "nominal", "scale":{"range": ["#758cd9", "#a13670", "#262254","#56b6c4","#ffa45e","#edb7e6","#ec4176"]}},
             "y": {"field": "Wage_Gap", "type": "quantitative", "title": "Wage Gap"}
           },
           "layer": [
             {"mark": "line"},
             {
               "transform": [{"filter": {"param": "hover", "empty": false}}],
-              "mark": "point"
+              "mark": "point",
             }
           ]
         },
