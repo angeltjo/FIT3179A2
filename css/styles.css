@@ -10,6 +10,10 @@ body {
     background-color: #bfb2d9;
 }
 
+p {
+     color: lightgrey;
+}
+
 .page {
     width: 850px;
     background-color: white;
@@ -37,8 +41,4 @@ h1 {
 
 .small-font {
     font-size: 14px;
-}
-
-.p {
-     color: lightgrey;
 }
