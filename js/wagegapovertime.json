@@ -26,7 +26,7 @@
             {"mark": "line"},
             {
               "transform": [{"filter": {"param": "hover", "empty": false}}],
-              "mark": "point",
+              "mark": "point"
             }
           ]
         },
