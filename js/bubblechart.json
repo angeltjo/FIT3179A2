@@ -40,8 +40,8 @@
     {
       "mark": "circle",
       "encoding": {
-        "title": "Country",
-        "color": {"field": "Entity", "type": "nominal", "scale":{"range": ["#758cd9", "#ed9213", "#961df2","#9fd1c6","#1a9140","#f5e322","#b28fba","#edb7e6"]}},
+        "color": {"field": "Entity", 
+      "title":"Country", "type": "nominal", "scale":{"range": ["#758cd9", "#ed9213", "#961df2","#9fd1c6","#1a9140","#f5e322","#b28fba","#edb7e6"]}},
         "size": {
           "field": "Population",
           "type": "quantitative",
@@ -82,7 +82,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Entity'] == 'Italy' || datum['Entity'] == 'United Kingdom' || datum['Entity'] == 'Spain'" || datum['Entity'] == 'Norway'",
+            "test": "datum['Entity'] == 'Italy' || datum['Entity'] == 'United Kingdom' || datum['Entity'] == 'Spain' || datum['Entity'] == 'Norway'",
             "value": 1
           },
           "value": 0
