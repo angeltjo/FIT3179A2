@@ -31,7 +31,10 @@
     {"filter": {"field": "gender", "oneOf": ["Male", "Female"]}}
   ],
   "encoding": {
-    "x": {"field": "percentage", "type": "quantitative", "title": "Percentage"},
+    "x": {"field": "percentage", 
+          "type": "quantitative", 
+          "title": "Percentage",
+          "scale": {"domain": [0, 1]}},
     "y": {
       "field": "position",
       "type": "nominal",
