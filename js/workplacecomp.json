@@ -61,7 +61,7 @@
             "domain": ["Female", "Male"],
             "range": ["#b28fba", "#9fd1c6"]
           },
-          "title": "Year"
+          "title": "Gender"
         },
         "size": {"value": 100},
         "opacity": {"value": 1}
